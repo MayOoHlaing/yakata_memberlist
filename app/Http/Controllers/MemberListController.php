@@ -11,37 +11,38 @@ use Illuminate\Support\Facades\DB;
 
 class MemberListController extends Controller
 {
+    // 乗船名簿登録画面の表示
     public function create()
     {
         return view('list_input');
     }
 
+    // 乗船名簿登録画面（確認画面へ進む）ボタンの処理
     public function add(Request $request)
     {
         $param = $request->all();
-        // dd($param);
         return redirect()->route('memberList.confirm')->with( ['param' => $param] );
     }
 
-    // 確認画面表示
+    // 乗船名簿確認画面表示
     public function confirm()
     {
         return view('list_confirm');
     }
 
-    // 確認画面のボタン処理
+    // 乗船名簿確認画面のボタン処理
     public function confirm_submit(Request $request)
     {
-        $param = $request->all();
+        $datas = $request->all();
 
+        // 押すボタンのチェック
         switch ($request->input('action')) {
             case '内容を修正する':
                 
-                return redirect()->route('memberList.create')->with( ['param' => $param] );
+                return redirect()->route('memberList.create')->with( ['param' => $datas] );
                 break;
 
             case 'この内容で送信する':
-                $datas = $request->all();
 
                 $data = [];
                 foreach ($datas['data']['name'] as $i => $name) {
@@ -60,13 +61,14 @@ class MemberListController extends Controller
                 $param['title'] = "「屋形船」乗船名簿";
                 $param['content'] = $datas;
 
+                // メール送信
                 Mail::send(new MailTemplate($param));
                 return redirect('memberListFinish');
                 break;
         }
     }
 
-    // 完了
+    // 乗船名簿の登録とメール送信完了画面表示
     public function finish()
     {
         Session::flash('flash_message', 'メール送信しました。');

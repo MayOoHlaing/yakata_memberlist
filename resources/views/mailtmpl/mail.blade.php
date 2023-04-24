@@ -1,14 +1,19 @@
-<!-- foreach ($_POST['data']['name'] as $i => $data) {
-  $message .= "お名前   :  " . $data . "\r\n場所   :  " . $_POST['data']['address'][$i] . "\r\n年齢   :  " . $_POST['data']['age'][$i] . "歳\r\n性別   :  " . $_POST['data']['gender'][$i] . "\r\n連絡先   :  " . $_POST['data']['contact'][$i];
-} -->
 <html>
 
 <body>
   乗船名簿は以下の通りです。<br />
-  <table rules='all' style='border-color: #666;' cellpadding='10'>
+  <?php foreach ($_POST['data']['name'] as $i => $data) { ?>
+    <p>お名前：　<?php echo $data ?></p>
+    <p>場所　：　<?php echo $_POST['data']['address'][$i] ?></p>
+    <p>年齢　：　<?php echo $_POST['data']['age'][$i] . "歳" ?></p>
+    <p>性別　：　<?php echo $_POST['data']['gender'][$i] ?></p>
+    <p>連絡先：　<?php echo $_POST['data']['contact'][$i] ?></p>
+    <p>---------------------------------------------------</p>
+  <?php } ?>
+  <!-- <table rules='all' style='border-color: #666;' cellpadding='10'>
     <tr>
       <th>
-        お名前:
+        お名前
       </th>
       <th>
         場所
@@ -27,12 +32,12 @@
       <tr>
         <td><?php echo $data ?></td>
         <td><?php echo $_POST['data']['address'][$i] ?></td>
-        <td><?php echo $_POST['data']['age'][$i] . "歳"?></td>
+        <td><?php echo $_POST['data']['age'][$i] . "歳" ?></td>
         <td><?php echo $_POST['data']['gender'][$i] ?></td>
         <td><?php echo $_POST['data']['contact'][$i] ?></td>
       </tr>
     <?php } ?>
-  </table>
+  </table> -->
 </body>
 
 </html>
