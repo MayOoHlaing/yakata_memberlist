@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/*
+	Description: initial setting
+	Version: 1.0
+	Author: idealgrow
+*/
+
+/*
+===== CONTENTS ===========================================
+
+	1: universal reset 
+	2: body and base setting
+		: general params
+		: acronyms and abbreviations styles
+	3: link setting
+
+==========================================================
+*/
+
+
+/*
+===== 1: universal reset =================================
+*/
+
+*{
+	margin:0;
+	padding:0;
+}
+
+/*
+===== 2: body and base setting ===========================
+*/
+body {
+	font-family:'Roboto', "ヒラギノ角ゴ Pro W3","メイリオ","ＭＳ Ｐゴシック",Verdana;
+	text-align:justify;
+	line-height: 1.8;
+	margin: 0px;
+	padding: 0px;
+	color:#333333;
+	background: url(../img/bg_body.png) repeat-x;
+}
+
+
+/*
+===== margin setting ====
+*/
+.mt00 { margin-top: 0   !important;}
+.mt05 { margin-top: 5px !important;}
+.mt10 { margin-top:10px !important;}
+.mt12 { margin-top:12px !important;}
+.mt15 { margin-top:15px !important;}
+.mt20 { margin-top:20px !important;}
+.mt25 { margin-top:25px !important;}
+.mt30 { margin-top:30px !important;}
+.mt35 { margin-top:35px !important;}
+.mt40 { margin-top:40px !important;}
+.mt45 { margin-top:45px !important;}
+.mt50 { margin-top:50px !important;}
+.mt60 { margin-top:60px !important;}
+.mr00 { margin-right: 0   !important;}
+.mr05 { margin-right: 5px !important;}
+.mr10 { margin-right:10px !important;}
+.mr12 { margin-right:12px !important;}
+.mr15 { margin-right:15px !important;}
+.mr20 { margin-right:20px !important;}
+.mr25 { margin-right:25px !important;}
+.mr30 { margin-right:30px !important;}
+.mr35 { margin-right:35px !important;}
+.mr40 { margin-right:40px !important;}
+.mr45 { margin-right:45px !important;}
+.mr50 { margin-right:50px !important;}
+.mr65 { margin-right:65px !important;}
+.mr95 { margin-right:95px !important;}
+.mb00 { margin-bottom: 0   !important;}
+.mb05 { margin-bottom: 5px !important;}
+.mb10 { margin-bottom:10px !important;}
+.mb12 { margin-bottom:12px !important;}
+.mb15 { margin-bottom:15px !important;}
+.mb20 { margin-bottom:20px !important;}
+.mb25 { margin-bottom:25px !important;}
+.mb30 { margin-bottom:30px !important;}
+.mb35 { margin-bottom:35px !important;}
+.mb40 { margin-bottom:40px !important;}
+.mb45 { margin-bottom:45px !important;}
+.mb50 { margin-bottom:50px !important;}
+.mb60 { margin-bottom:60px !important;}
+.ml00 { margin-left: 0   !important;}
+.ml05 { margin-left: 5px !important;}
+.ml10 { margin-left:10px !important;}
+.ml12 { margin-left:12px !important;}
+.ml15 { margin-left:15px !important;}
+.ml20 { margin-left:20px !important;}
+.ml25 { margin-left:25px !important;}
+.ml30 { margin-left:30px !important;}
+.ml35 { margin-left:35px !important;}
+.ml40 { margin-left:40px !important;}
+.ml45 { margin-left:45px !important;}
+.ml50 { margin-left:50px !important;}
+/*
+===== font setting ====
+*/
+.txtalc{
+	text-align:center;
+}
+.ita{
+	font-style:italic;
+}
+.bold{
+	font-weight:bold;
+}
+.rb{
+	color:#F00;
+	font-weight:bold;
+}
+.reds{
+	color:#F00;
+	font-size:80%;
+}
+.fzss {
+	font-size: 50%;
+}
+.fzs {
+	font-size: 65%;
+}
+.fsms {
+	font-size:75%;
+}
+.fzm {
+	font-size: 80%;
+}
+.fzml {
+	font-size: 90%;
+}
+.fzmll {
+	font-size: 100%;
+}
+.fzl {
+	font-size: 110%;
+}
+.fzll {
+	font-size: 120%;
+}
+.fzxl {
+	font-size: 130%;
+}
+
+/* general params
+--------------------*/
+h1, h2, h3, h4, h5, h6,
+p, pre, ul, ol, dl, dt, dd,
+address, blockquote{
+	padding: 0;/* margin&padding reset */
+	line-height: 1.4;
+	display: block;
+	margin: 0px;
+	font-size:16px;
+	font-weight: normal;
+	color: #333333;
+}
+div,ul,li,p,a,dl,dt,dd,span,input,select,textarea{
+	box-sizing:border-box;
+}
+form{
+	padding: 0;/* margin&padding reset */
+	margin: 0px;
+}
+hr,.areaAnchor,.anchor { display : none; }
+img {
+	border: none;/* img do not want a border */
+}
+li { list-style: none; }/* link do not want a dot */
+
+/* acronyms and abbreviations styles 
+-------------------------------------*/
+acronym,abbr{cursor:help;}
+
+textarea, input{
+	font-family: 'Roboto', "ヒラギノ角ゴ Pro W3", "メイリオ", "ＭＳ Ｐゴシック", Verdana;
+	border:solid 1px #d9d9d9;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	padding:10px 12px;
+	box-sizing:border-box;
+	box-shadow:2px 2px 3px -2px #b2b2b2 inset;
+	-moz-box-shadow:2px 2px 3px -2px #b2b2b2 inset;
+	-webkit-box-shadow:2px 2px 3px -2px #b2b2b2 inset;
+	font-size:16px;
+}
+select,input[type=date]{
+	font-family: 'Roboto', "ヒラギノ角ゴ Pro W3", "メイリオ", "ＭＳ Ｐゴシック", Verdana;
+	border:solid 1px #d9d9d9;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	padding:8px 40px 8px 10px;
+	box-sizing:border-box;
+	box-shadow:2px 2px 3px -2px #b2b2b2 inset;
+	-moz-box-shadow:2px 2px 3px -2px #b2b2b2 inset;
+	-webkit-box-shadow:2px 2px 3px -2px #b2b2b2 inset;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background:url(../img/ico_select.png) right center no-repeat;
+	background-size:30px auto;
+	-webkit-background-size:30px auto;
+	-moz-background-size:30px auto;
+	cursor:pointer;
+	font-size:16px;
+}
+select::-ms-expand {
+    display: none;
+}
+:placeholder-shown {
+    color: #ccc; }
+::-webkit-input-placeholder {
+    color: #ccc; }
+:-moz-placeholder {
+    color: #ccc; opacity: 1; }
+::-moz-placeholder {
+    color: #ccc; opacity: 1; }
+:-ms-input-placeholder {
+    color: #ccc; }
+/*
+===== 3: link setting ===========================
+*/
+
+a:link {  color: #3366CC; text-decoration: underline}
+a:visited {  color: #86A4E1; text-decoration: underline}
+a:hover {  color: #FF6600; text-decoration: none}
+a:active {  color: #CC3300; text-decoration: none}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*
+	Description: initial setting
+	Version: 1.0
+	Author: idealgrow
+*/
+
+/* Set Base Style
+----------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url("default.css"); /* initial setting */
+@import "layout.css";/* layout style */
+@import "base.css";/* base template style */
+

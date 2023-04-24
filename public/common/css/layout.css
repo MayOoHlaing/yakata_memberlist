@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*
+	Description: initial setting
+	Version: 1.0
+	Author: idealgrow
+*/
+#wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+#wrapper h1{
+	padding: 10px 0;
+}
+header{
+	border-bottom: dotted 3px #e4e4e4;
+}
+main{
+	padding: 20px 0;
+}
+footer{
+	border-top:  dotted 3px #e4e4e4;
+	padding: 20px 0;
+	font-size: 14px;
+	text-align: center;
+}
+@media screen and (max-width: 640px) {
+#wrapper{
+	width: 100%;
+}
+	#wrapper h1{
+		width: 45%;
+		margin-left: 10px;
+	}
+#wrapper h1 img{
+	width: 100%;
+	height: auto;
+}
+main{
+	padding: 20px 10px;
+}
+footer{
+	padding: 20px 10px;
+}
+}
